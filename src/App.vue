@@ -30,6 +30,10 @@ onMounted(async() => {
 <template>
 <input class="bg-stone-700" v-model="titleVal">
 <button @click="Submit">Add</button>
-<button class="bg-pink-200 text-white ">hello</button>
 
+<ul>
+  <li v-for="item in data">
+    {{item.title}}
+  </li>
+</ul>
 </template>
